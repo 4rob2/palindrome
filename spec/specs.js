@@ -1,6 +1,6 @@
-describe('isPalindrome', function(){
+describe('compareLast', function(){
   it('should compare first and last character', function (){
-    expect(isPalindrome("pale")).to.equal('not a palindrome');
+    expect(compareLast("pale")).to.equal('not a palindrome');
   });
 });
 
@@ -11,8 +11,15 @@ describe("isEven", function (){
 });
 
 describe("midPoint", function (){
-  it ("should obtain and remove middle value of array",
+  it ("should obtain and remove middle value of array, leaving the last half",
   function () {
-    expect(midPoint("kayak")).to.equal("kaak")
+    expect(midPoint("kayak")).to.equal("ak")
+  });
+});
+
+describe("finalTest", function (){
+  it ("should obtain and remove middle value of array, leaving the last half",
+  function () {
+    expect(finalTest("kayak")).to.equal("this is a palindrome")
   });
 });
