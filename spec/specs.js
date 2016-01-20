@@ -4,8 +4,15 @@ describe('isPalindrome', function(){
   });
 });
 
-describe("p-input", function (){
+describe("isEven", function (){
   it("should count and determine if even without a midpoint that needs to be excluded", function () {
-    expect (p-input ("pale")).to.equal ("true")
+    expect(isEven("kayak")).to.equal (false)
+  });
+});
+
+describe("midPoint", function (){
+  it ("should obtain and remove middle value of array",
+  function () {
+    expect(midPoint("kayak")).to.equal("kaak")
   });
 });
